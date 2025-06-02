@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.typing-cursor {
+  font-weight: bold;
+  color: black;
+  animation: blink 1s step-end infinite;
+  user-select: none;
+  pointer-events: none;
+  display: inline-block;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
